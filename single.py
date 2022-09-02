@@ -10,10 +10,10 @@ import re
 import xlwt
 
 # taking input from user
-company = str(input("Please input companies names: "))
-
+company = str(input("Please Enter Company Name: "))
+path = str(input("Please Enter chromedriver Path: ")
 # defining web driver for chrome
-s = Service('C:/Users/chait/Dropbox/PC/Downloads/chromedriver_win32 (1)/chromedriver.exe')
+s = Service(path)
 driver = webdriver.Chrome(service=s)
 
 # searching on Google
@@ -57,10 +57,13 @@ file = open("contact.txt", "w")
 
 # write results to file
 for i in result:
-    file.write(str(i[0:]) + "\n")
+    file.write(str(i) + "\n")
 file.close()
 
 # closing browser
 driver.quit()
 
 # ANCHOR TEXT
+
+           
+print("Thank you for using MY SCRIPT")
