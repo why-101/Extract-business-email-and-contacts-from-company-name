@@ -9,12 +9,6 @@ import time
 import re
 import xlwt
 
-with open('CTRI.csv', 'r') as f:
-    reader = csv.reader(f)
-    your_list = list(reader)
-j = list(itertools.chain.from_iterable(your_list))
-res_lis = j[1:]
-print(res_lis)
 # taking input from user
 company = str(input("Please input companies names: "))
 
